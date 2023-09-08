@@ -1,0 +1,21 @@
+0. 安装依赖：使用VPN
+pip install -r requirements.txt
+或者使用国内镜像：
+pip install -r requirements.txt -i  http://pypi.douban.com/simple  --trusted-host pypi.douban.com
+
+
+使用ChatReview
+
+1. 对本地的论文进行分析： 运行chat_reviewer.py， 比如：
+python chat_reviewer.py --paper_path "input_file/demo1.pdf"
+
+2. 对本地的论文进行批量分析： 运行chat_reviewer.py， 比如：
+python chat_reviewer.py --paper_path "input_file"
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+使用ChatResponse
+
+1. 对本地的审稿评论review_comments.txt进行回复： 运行chat_response.py， 比如：
+python chat_response.py --comment_path "review_comments.txt"
